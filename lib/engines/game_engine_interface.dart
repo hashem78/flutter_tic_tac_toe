@@ -1,0 +1,3 @@
+class GameEngine {
+  const GameEngine();
+}
