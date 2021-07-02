@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:flutter_tic_tac_toe/engines/minimax_engine.dart';
 import '../models/game_model/game_draw_model.dart';
 import '../models/game_model/game_initial_model.dart';
 import '../models/game_model/game_win_model.dart';
@@ -45,7 +44,7 @@ class BoardTile extends HookWidget {
       child: GestureDetector(
         onTap: () {
           final notifier = context.read(boardProvider.notifier);
-          notifier.updateXPosition(const MiniMaxGameEngine(), index);
+          notifier.updatePosition(context.read(gameEngineProvider), index);
         },
         child: ColoredBox(
           color: color,

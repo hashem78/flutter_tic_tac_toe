@@ -1,9 +1,9 @@
 import 'package:equatable/equatable.dart';
 
-abstract class IResultMessageModel extends Equatable {
+class ResultMessageModel extends Equatable {
   final int winner;
   final int move;
-  const IResultMessageModel({
+  const ResultMessageModel({
     required this.winner,
     required this.move,
   });

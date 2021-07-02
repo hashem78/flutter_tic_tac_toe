@@ -1,6 +1,6 @@
 import 'result_message_model_interface.dart';
 
-class ResultMessageWinModel extends IResultMessageModel {
+class ResultMessageWinModel extends ResultMessageModel {
   const ResultMessageWinModel({
     required int winner,
     required int move,

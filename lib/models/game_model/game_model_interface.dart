@@ -1,9 +1,9 @@
 import 'package:equatable/equatable.dart';
 
-abstract class IGameModel extends Equatable {
+abstract class GameModel extends Equatable {
   final int winner;
   final List<int> winningIndicies;
-  const IGameModel({
+  const GameModel({
     required this.winner,
     required this.winningIndicies,
   });

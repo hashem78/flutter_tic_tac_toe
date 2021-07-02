@@ -1,6 +1,6 @@
 import 'game_model_interface.dart';
 
-class GameWinModel extends IGameModel {
+class GameWinModel extends GameModel {
   const GameWinModel({
     required int winner,
     required List<int> winningIndicies,
