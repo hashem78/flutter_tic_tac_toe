@@ -44,7 +44,7 @@ class BoardTile extends HookWidget {
       child: GestureDetector(
         onTap: () {
           final notifier = context.read(boardProvider.notifier);
-          notifier.updatePosition(context.read(gameEngineProvider), index);
+          notifier.updatePosition(index);
         },
         child: ColoredBox(
           color: color,

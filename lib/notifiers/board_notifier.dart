@@ -1,4 +1,3 @@
-import '../engines/game_engine_interface.dart';
 import '../engines/minimax_engine.dart';
 import '../engines/online_engine.dart';
 import '../models/game_model/game_initial_model.dart';
@@ -15,7 +14,8 @@ class BoardNotifier extends StateNotifier<List<int>> {
   ProviderReference ref;
   BoardNotifier(this.ref) : super([0, 0, 0, 0, 0, 0, 0, 0, 0]);
 
-  Future<void> updatePosition(GameEngine gameEngine, int position) async {
+  Future<void> updatePosition(int position) async {
+    final gameEngine = ref.read(gameEngineProvider);
     if (gameEngine is MiniMaxGameEngine) {
       state = state.copyWithIndexTo(position, 1);
       MiniMaxGameEngine.startTask(handelMinimaxResultMessage, state);
