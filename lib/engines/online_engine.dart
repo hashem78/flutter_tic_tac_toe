@@ -4,6 +4,7 @@ import 'game_engine.dart';
 
 class OnlineGameEngine extends GameEngine {
   const OnlineGameEngine();
+  static int portNumber = 19281;
   static Socket? socket;
   static void createRoom(
     void Function(List<int> board) stateChangeHandeler,
@@ -13,7 +14,7 @@ class OnlineGameEngine extends GameEngine {
   ) {
     if (socket == null) {
       socket = io(
-        "https://368d004015c9.ngrok.io",
+        "ws://localhost:$portNumber",
         OptionBuilder()
             .setTransports(['websocket'])
             .disableAutoConnect()
@@ -55,7 +56,7 @@ class OnlineGameEngine extends GameEngine {
   ) {
     socket?.dispose();
     socket = io(
-      "https://368d004015c9.ngrok.io",
+      'ws://localhost:$portNumber',
       OptionBuilder().setTransports(['websocket']).disableAutoConnect().build(),
     );
     socket!.connect();
