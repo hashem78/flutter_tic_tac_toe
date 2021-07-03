@@ -1,4 +1,4 @@
-import 'result_message_model_interface.dart';
+import 'result_message_model.dart';
 
 class ResultMessageWinModel extends ResultMessageModel {
   const ResultMessageWinModel({

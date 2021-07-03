@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:flutter_tic_tac_toe/engines/game_engine_interface.dart';
+import 'package:flutter_tic_tac_toe/engines/game_engine.dart';
 import 'package:flutter_tic_tac_toe/engines/minimax_engine.dart';
 import 'package:flutter_tic_tac_toe/engines/online_engine.dart';
 import 'package:flutter_tic_tac_toe/models/game_model/game_win_model.dart';

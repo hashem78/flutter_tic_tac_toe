@@ -1,7 +1,7 @@
-import 'package:flutter_tic_tac_toe/engines/game_engine_interface.dart';
+import 'package:flutter_tic_tac_toe/engines/game_engine.dart';
 import 'package:flutter_tic_tac_toe/notifiers/game_engine_notifier.dart';
 
-import '../models/game_model/game_model_interface.dart';
+import 'models/game_model/game_model.dart';
 import 'notifiers/game_end_notifier.dart';
 import 'package:riverpod/riverpod.dart';
 

@@ -1,6 +1,6 @@
 import 'package:socket_io_client/socket_io_client.dart';
 
-import 'game_engine_interface.dart';
+import 'game_engine.dart';
 
 class OnlineGameEngine extends GameEngine {
   const OnlineGameEngine();

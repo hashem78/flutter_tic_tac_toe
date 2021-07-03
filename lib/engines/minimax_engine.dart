@@ -1,7 +1,7 @@
 import 'dart:isolate';
 import 'dart:math';
 
-import 'package:flutter_tic_tac_toe/engines/game_engine_interface.dart';
+import 'package:flutter_tic_tac_toe/engines/game_engine.dart';
 import 'package:flutter_tic_tac_toe/models/result_message_model/result_message_draw_model.dart';
 import 'package:flutter_tic_tac_toe/models/result_message_model/result_message_win_model.dart';
 

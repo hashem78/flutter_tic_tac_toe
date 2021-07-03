@@ -1,4 +1,4 @@
-import 'game_model_interface.dart';
+import 'game_model.dart';
 
 class GameWinModel extends GameModel {
   const GameWinModel({
